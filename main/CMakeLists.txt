@@ -1,2 +1,0 @@
-add_executable(developer_main main.cpp)
-target_link_libraries(developer_main PRIVATE developer_lib)
