@@ -1,0 +1,7 @@
+add_test([=[DeveloperTest.ConstructorTest]=]  /workspaces/test2/build/test/developer_test [==[--gtest_filter=DeveloperTest.ConstructorTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DeveloperTest.ConstructorTest]=]  PROPERTIES WORKING_DIRECTORY /workspaces/test2/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[DeveloperTest.LoadLogoSuccess]=]  /workspaces/test2/build/test/developer_test [==[--gtest_filter=DeveloperTest.LoadLogoSuccess]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DeveloperTest.LoadLogoSuccess]=]  PROPERTIES WORKING_DIRECTORY /workspaces/test2/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[DeveloperTest.LoadLogoFailure]=]  /workspaces/test2/build/test/developer_test [==[--gtest_filter=DeveloperTest.LoadLogoFailure]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[DeveloperTest.LoadLogoFailure]=]  PROPERTIES WORKING_DIRECTORY /workspaces/test2/build/test SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  developer_test_TESTS DeveloperTest.ConstructorTest DeveloperTest.LoadLogoSuccess DeveloperTest.LoadLogoFailure)
